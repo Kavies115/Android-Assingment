@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
@@ -67,13 +68,15 @@ fun LogoButton(
         },
         content = {
             Text(stringResource(id = R.string.app_name), fontSize = 40.sp)
-        }
+        },
+        modifier = Modifier.fillMaxWidth()
+
     )
 }
 
 @Preview
 @Composable
-fun revTopAppBar(){
+fun prevTopAppBar(){
     VocabTheme {
         val navController = rememberNavController()
         MainPageTopAppBar(navController = navController)
