@@ -4,4 +4,6 @@
     <string name="game">Game</string>
     <string name="add">Add</string>
     <string name="list">List</string>
+    <string name="card1_Text1">Hello Welcome to</string>
+    <string name="card1_Text2">Here\'s a list of some of your recently added Words</string>
 </resources>
